@@ -1,25 +1,22 @@
+
+
 {
-  "name": "server",
+  "name": "tiktok-downloader-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TikTok video downloader as a Vercel serverless function",
+  "main": "api/download.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vercel dev",
+    "start": "vercel dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["tiktok", "video", "api", "vercel", "serverless"],
+  "author": "Your Name",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
-    "chalk": "^5.4.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "follow-redirects": "^1.15.9",
-    "inquirer": "^6.5.2",
-    "inquirer-fuzzy-path": "^2.3.0",
-    "lodash": "^4.17.21",
-    "node-fetch": "^2.6.1",
-    "playwright": "^1.52.0"
+    "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
